@@ -175,8 +175,8 @@
 
 	<!-- 项目基本配置 -->
 	<build>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<testSourceDirectory>src/test/java</testSourceDirectory>
+<!--		<sourceDirectory>src/main/java</sourceDirectory>-->
+<!--		<testSourceDirectory>src/test/java</testSourceDirectory>-->
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -185,6 +185,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF8</encoding>
+					<outputDirectory>${project.build.directory}/resources</outputDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
